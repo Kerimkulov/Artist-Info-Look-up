@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    android:paddingLeft="@dimen/padding_child"
+    android:paddingRight="@dimen/padding_child"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/artist_albums"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/colorWhite"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/bgColor"
+        app:title="@string/main_page_toolbar_title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/search_bg"
+        >
+
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:queryHint="@string/search_content"
+            android:iconifiedByDefault="false"
+            >
+            <requestFocus />
+        </SearchView>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_marginTop="@dimen/padding_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/search_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/artist_logo"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:padding="@dimen/padding_logo"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="@dimen/padding_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/artist_name"
+                    android:textAlignment="textStart"
+                    android:padding="@dimen/padding_child"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_title"/>
+                <TextView
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:id="@+id/artist_year"
+                    android:padding="@dimen/padding_child"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_label"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/artist_website"
+                android:padding="@dimen/padding_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_label"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/padding_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/artist_thumb"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/artist_biog"
+                    android:padding="@dimen/padding_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

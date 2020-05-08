@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ArtistInfoLookup</string>
+    <string name="artist_toolbar">Artist</string>
+    <string name="artist_album_toolbar">Albums</string>
+    <string name="image">image</string>
+    <string name="album_name_label">Album name</string>
+    <string name="album_genre_label">Genre</string>
+    <string name="album_year_label">2012</string>
+    <string name="main_page_toolbar_title">Artist information lookup</string>
+    <string name="artist_info_btn">Artist info</string>
+    <string name="artist_albums_btn">Artist albums</string>
+    <string name="search_content">Search album</string>
+    <string name="album_detail_title">Album</string>
+
+    <string name="no_website">no website</string>
+    <string name="no_desc">no description</string>
+    <string name="no_logo">no logo</string>
+    <string name="no_thumb">no thumb</string>
+</resources>

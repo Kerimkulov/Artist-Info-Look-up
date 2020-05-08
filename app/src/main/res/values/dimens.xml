@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="border_search">15dp</dimen>
+    <dimen name="padding_child">10dp</dimen>
+    <dimen name="margin_left_tags">5dp</dimen>
+    <dimen name="margin_top_btn">50dp</dimen>
+    <dimen name="padding_child_btn">20dp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_label">15sp</dimen>
+    <dimen name="padding_logo">20dp</dimen>
+</resources>

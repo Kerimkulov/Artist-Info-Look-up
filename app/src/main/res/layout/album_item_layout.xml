@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_child"
+            android:background="@color/bgItemColor">
+
+            <TextView
+                android:id="@+id/album_title"
+                android:padding="@dimen/padding_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/tag_text_color"
+                tools:text="@string/album_name_label"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="@dimen/padding_child"
+                        android:id="@+id/album_genre"
+                        android:textColor="@color/tag_text_color"
+                        android:layout_width="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_height="match_parent"
+                        tools:text="@string/album_genre_label"
+                        />
+                    <TextView
+                        android:padding="@dimen/padding_child"
+                        android:layout_weight="1"
+                        android:textColor="@color/tag_text_color"
+                        android:textAlignment="textEnd"
+                        android:id="@+id/album_year"
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                       />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
