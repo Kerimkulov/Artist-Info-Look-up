@@ -16,4 +16,29 @@
     <string name="no_desc">no description</string>
     <string name="no_logo">no logo</string>
     <string name="no_thumb">no thumb</string>
+    <string name="track_name_label">Track name</string>
+    <string name="duration_label">duration</string>
+    <string name="track_toolbar">Track</string>
+    <string name="open_video_btn">Open video</string>
+    <string name="video_btn">Video</string>
+
+    <string name="login_email">Enter your email</string>
+    <string name="login_psw">Enter your password</string>
+    <string name="login_signIn_btn">Sign In</string>
+    <string name="link_to_reg">Don\'t have an account? Sign up =)</string>
+    <string name="username_text">Enter your username</string>
+    <string name="repeat_psw_text">Repeat your password</string>
+    <string name="sign_up_btn">Sign up</string>
+    <string name="start_conversation">Start conversation</string>
+    <string name="some_text">some text</string>
+    <string name="send_msg_btn">SEND</string>
+    <string name="hint_msg">Write message</string>
+    <string name="fav_artist_toolbar">Favourite artists</string>
+    <string name="artist_name_label">Artist name</string>
+    <string name="favourites_btn">Favourites</string>
+    <string name="login_label">Login</string>
+    <string name="logout_label">Logout</string>
+    <string name="artist_albums_menu">Artist Albums</string>
+    <string name="artist_videos_menu">Artist Videos</string>
+
 </resources>

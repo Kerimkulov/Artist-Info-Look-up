@@ -1,10 +1,11 @@
-package com.example.artistinfolookup
+package com.example.artistinfolookup.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.artistinfolookup.R
 import com.example.artistinfolookup.networking.Album
 import kotlinx.android.synthetic.main.album_item_layout.view.*
 
@@ -52,9 +53,6 @@ class MyAdapter(
             else{
                 view.album_genre.text = ""
             }
-
-
-
 
             view.setOnClickListener{
                 onAlbumClick(album)

@@ -15,4 +15,12 @@ interface ApiService {
 
     @GET("searchalbum.php")
     fun getAlbumDetailByName(@Query("a") key: String): Call<AlbumDetail>
+
+    @GET("track.php")
+    fun getTrackByAlbumId(@Query("m") key: String): Call<TrackList>
+
+    @GET("mvid.php")
+    fun getVideoByArtistId(@Query("i") key: String): Call<ArtistVideo>
+
+
 }

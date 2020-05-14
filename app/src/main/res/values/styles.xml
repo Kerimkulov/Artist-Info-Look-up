@@ -13,4 +13,17 @@
         <item name="android:textColor">@color/tag_text_color</item>
         <item name="android:textSize">@dimen/text_size_title</item>
     </style>
+
+    <style name="search_text">
+        <item name="android:editTextColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">@color/hintTextColor</item>
+        <item name="android:editTextColor">@color/hintTextColor</item>
+        <item name="android:hint">@color/hintTextColor</item>
+    </style>
 </resources>

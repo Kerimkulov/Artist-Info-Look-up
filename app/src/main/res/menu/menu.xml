@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_video"
+        android:title="@string/artist_videos_menu"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_album"
+        android:title="@string/artist_albums_menu"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_fav"
+        android:title="@string/fav_artist_toolbar"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_login"
+        android:title="@string/login_label"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/logout_label"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

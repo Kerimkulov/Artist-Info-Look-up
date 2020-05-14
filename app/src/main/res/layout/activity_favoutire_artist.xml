@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/bgColor"
     android:padding="@dimen/padding_child"
-    tools:context=".activity.ArtistAlbum">
+    android:orientation="vertical"
+    tools:context=".activity.FavoutireArtist">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/artist_albums"
@@ -17,15 +17,13 @@
         app:titleTextColor="@color/colorWhite"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         android:background="@color/bgColor"
-        app:title="@string/artist_album_toolbar"/>
-
+        app:title="@string/fav_artist_toolbar"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="@dimen/padding_child"
-        android:id="@+id/album_list"
+        android:padding="@dimen/padding_child"
+        android:id="@+id/fav_list"
         android:background="@color/bgColor"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

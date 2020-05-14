@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    tools:context=".activity.LoginActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/artist_info"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:titleTextColor="@color/colorWhite"
+        app:title="@string/login_signIn_btn"
+        android:background="@color/bgColor"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_vertical"
+        android:paddingLeft="@dimen/padding_layout_horizontal"
+        android:paddingRight="@dimen/padding_layout_horizontal"
+        android:paddingTop="@dimen/padding_layout_vertical"
+        android:paddingBottom="@dimen/padding_layout_horizontal"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/paddingBottom_edittext"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edit_text"
+
+                android:hint="@string/login_email"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edit_text"
+                android:inputType="textPassword"
+                android:hint="@string/login_psw" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/padding_layout_horizontal"
+        android:paddingRight="@dimen/padding_layout_horizontal"
+        >
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:text="@string/login_signIn_btn"
+            android:background="@drawable/search_bg"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/link_text_padding"
+        >
+        <TextView
+            android:gravity="center|bottom"
+            android:id="@+id/reg_textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlue"
+            android:text="@string/link_to_reg"
+            />
+    </LinearLayout>
+
+</LinearLayout>
